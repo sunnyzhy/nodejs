@@ -1,4 +1,28 @@
 # 深拷贝
+- 函数实现
+
+```
+cloneDeep(obj) {
+  if (typeof obj !== 'object' || Object.keys(obj).length === 0) {
+    return obj
+  }
+  let data = {}
+  return this.recursive(obj, data)
+},
+recursive(obj, data = {}) {
+  for (var i in obj) {
+    if (typeof obj[i] == 'object' && Object.keys(obj[i].length > 0)) {
+      data[i] = this.recursive(obj[i])
+    } else {
+      data[i] = obj[i]
+    }
+  }
+  return data
+}
+```
+
+- JSON的stringify和parse实现
+
 ```
 var obj = {}
 
