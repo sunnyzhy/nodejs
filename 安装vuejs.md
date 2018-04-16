@@ -33,6 +33,14 @@
 	运行成功后，cmd开始监听本地的8080端口,同时，浏览器会自动打开http://localhost:8080/#/（如果浏览器没有自动打开，可以手动输入）。
 ```
 
+# 打包
+```
+# npm run build
+```
+```
+	把生成的dist目录部署到nginx即可
+```
+
 # 安装jquery
 ```
 # cnpm install jquery --save
