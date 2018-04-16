@@ -41,6 +41,31 @@
 	把生成的dist目录部署到nginx即可
 ```
 
+# 安装依赖的模块
+- 在dependencies中添加依赖模块，然后安装
+```
+"dependencies": {
+    "echarts": "4.0.4",
+    "element-ui": "2.3.4",
+    "jquery": "3.3.1"
+}
+```
+```
+# cnpm install
+```
+
+- 用install命令安装
+
+```
+# cnpm install 模块名称(echarts/element-ui/jquery) --save
+```
+
+# 依赖的模块及其版本范围
+1. 指定版本：比如1.2.2，遵循"大版本.次要版本.小版本"的格式规定。
+2. 波浪号(tilde) + 指定版本：比如~1.2.2，表示安装1.2.x的最新版本（不低于1.2.2），但是不安装1.3.x。
+3. 插入号(caret) + 指定版本：比如ˆ1.2.2，表示安装1.x.x的最新版本（不低于1.2.2），但是不安装2.x.x。
+4. latest：安装最新版本。
+
 # 安装jquery
 ```
 # cnpm install jquery --save
