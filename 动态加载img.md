@@ -7,7 +7,8 @@ src
 |_ _ _yy.jpg
 ```
 
-# template
+# 方法1
+## template
 ```
           <template slot-scope="scope">
             <div>
@@ -19,7 +20,7 @@ src
           </template>
 ```
 
-# script
+## script
 ```
   filters: {
     imgUrl(type) {
@@ -34,6 +35,39 @@ src
   }
 ```
 
+# 方法2
+## template
+```
+          <template slot-scope="scope">
+            <div>
+              <img v-for="tag in scope.row.data"
+                   :key="tag.id"
+                   :src="initSrc(tag.type)"
+                   style="width: 26px; height: 26px;">
+            </div>
+          </template>
+```
+
+## script
+```
+import xx from '@/assets/custom_images/xx.jpg'
+import yy from '@/assets/custom_images/yy.jpg'
+
+export default {
+  data() {
+    return {
+      images: [xx, yy]
+    }
+  }
+  
+  methods: {
+    initSrc(type) {
+      return this.images[type-1]
+    }
+  }
+}
+```
+
 # 编译生成到static目录
 ```
 dist
@@ -42,4 +76,3 @@ dist
 |_ _ _xx.89115c6.jpg
 |_ _ _yy.960edba.jpg
 ```
-
