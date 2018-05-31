@@ -35,7 +35,7 @@ cnpm install babel-preset-env --save
           return (
             <span class="custom-tree-node">
               <span>{node.label}</span>
-              <span><el-tag size="mini" type="primary">网关</el-tag></span>
+              <span><el-tag size="mini" type="primary">标识</el-tag></span>
             </span>)
         } else {
           return (<span>{node.label}</span>)
