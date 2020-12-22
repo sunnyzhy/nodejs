@@ -2,7 +2,7 @@
 [nodejs 官网](https://nodejs.org/en/ 'nodejs')
 
 ## 1. 安装 nodejs
-```
+```bash
 # cd /usr/local
 
 # xz -d node-v15.4.0-linux-x64.tar.xz
@@ -12,16 +12,16 @@
 # mv node-v15.4.0-linux-x64 nodejs
 ```
 
-# 配置环境变量
-```
+## 2. 配置环境变量
+```bash
 # vim /etc/profile
 export PATH=$PATH:/usr/local/nodejs/bin
 
 # source /etc/profile
 ```
 
-# 查看版本
-```
+## 3. 查看版本
+```bash
 # node -v
 v15.4.0
 
@@ -29,8 +29,8 @@ v15.4.0
 7.0.15
 ```
 
-# 安装cnpm
-```
+## 4. 安装cnpm
+```bash
 # npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 # cnpm -v
