@@ -31,7 +31,7 @@ v15.4.0
 
 ## 4. 安装cnpm
 ```bash
-# npm install -g cnpm --registry=https://registry.npm.taobao.org
+# npm install cnpm -g --registry=https://registry.npm.taobao.org
 
 # cnpm -v
 cnpm@6.1.1 (/usr/local/nodejs/lib/node_modules/cnpm/lib/parse_argv.js)
