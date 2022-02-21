@@ -1,7 +1,7 @@
-# nodejs
-[nodejs 官网](https://nodejs.org/en/ 'nodejs')
+# Node.js
+[Node.js 官网](https://nodejs.org/en/ 'Node.js')
 
-## 1. 安装 nodejs
+## 1. 安装 Node.js
 ```bash
 # cd /usr/local
 
