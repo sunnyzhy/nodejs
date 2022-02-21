@@ -3,7 +3,7 @@
 ## 1 安装 cross-env 插件
 
 ```bash
-npm install --save-dev cross-env
+npm install --global --save cross-env
 ```
 
 ## 2 修改 config 目录下的文件
