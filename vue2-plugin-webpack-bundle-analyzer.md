@@ -92,7 +92,7 @@ if (process.argv.indexOf('report') > 0) {
 
     > Listening at http://localhost:${vue_port}
 
-    Webpack Bundle Analyzer is started at http://127.0.0.1:8889
+    Webpack Bundle Analyzer is started at http://127.0.0.1:8989
     Use Ctrl+C to close it
    ```
 2. 浏览器会自动打开 ```http://127.0.0.1:8989```
