@@ -10,7 +10,7 @@ npm install --save webpack-bundle-analyzer
 
 ## 2 使用
 
-***修改 ```webpack.dev.conf.js```***
+***代码分析报告应该在开发阶段展示，所以修改 ```webpack.dev.conf.js```***
 
 ### 2.1 引入
 
@@ -57,8 +57,9 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 #### 3.1.1 修改 BundleAnalyzerPlugin 配置
 
-1. 使用默认配置即可，即 ```new BundleAnalyzerPlugin()```，无需配置各项参数；本示例代码列出了主要参数，仅作展示之用
+1. 使用插件的默认配置即可，即 ```new BundleAnalyzerPlugin()```，无需配置各项参数；本示例代码列出了主要参数，仅作展示之用
 2. 如果需要配置的话，只用指定端口号 analyzerPort
+3. openAnalyzer 是否在浏览器打开分析页面: true:自动打开;false:不打开
 
 ```js
 // 运行以下命令以启动代码分析报告插件:
@@ -104,6 +105,7 @@ if (process.argv.indexOf('report') > 0) {
 1. 把 analyzerMode 设置为 disabled
 2. 把 generateStatsFile 设置为 true
 3. 端口号 analyzerPort=8989 并不会生效，需要在 package.json 的 scripts 里指定启动参数
+4. openAnalyzer 是否在浏览器打开分析页面: true:自动打开;false:不打开
 
 ```js
 var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
