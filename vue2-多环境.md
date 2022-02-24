@@ -155,6 +155,12 @@ npm run build--test
 npm run build--prod
 ```
 
+### 6.4 安装/编译
+
+```bash
+npm install && npm run build--dev
+```
+
 ## 7 运行
 
 把生成的 dist 复制到 nginx/html 目录下。
