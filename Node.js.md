@@ -35,6 +35,13 @@ v15.4.0
 https://registry.npmjs.org/
 ```
 
+查看 npm 的安装目录:
+
+```bash
+# npm -g bin
+d:\nodejs
+```
+
 ## 5. 安装 cnpm
 ### 5.1 安装方式一
 ```bash
