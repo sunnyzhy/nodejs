@@ -8,6 +8,8 @@ npm install --global --save cross-env
 
 ## 2 修改 config 目录下的文件
 
+- 编译发布的时候，可以把测试环境/开发环境当作是生产环境的一种
+
 ### 2.1 dev.env.js(开发环境)
 
 ```js
@@ -100,7 +102,7 @@ spinner.start()
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
-    "build--dev": "cross-env NODE_ENV=production profile=dev node build/build.js",
+    "build--dev": "cross-env NODE_ENV=development profile=dev node build/build.js",
     "build--test": "cross-env NODE_ENV=production profile=test node build/build.js",
     "build--prod": "cross-env NODE_ENV=production profile=prod node build/build.js"
   }
