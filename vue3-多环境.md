@@ -29,7 +29,7 @@ vue-cli-service build --mode development
 
 - 在项目的根目录下新建 .env 文件，跟 package.json 平级
 - 环境文件格式: ```.env.[model]```
-- 可以把测试环境当作是生产环境的一种
+- 编译发布的时候，可以把测试环境/开发环境当作是生产环境的一种
 
 ### 1.1 新建 .env.dev(开发环境)
 
