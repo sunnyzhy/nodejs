@@ -2,7 +2,7 @@
 
 ## 1 卸载 vue2
 
-如果之前安装了 cli2 ,就需要先卸载 cli2 才能安装 cli3+
+如果之前安装了 cli2 ,就需要先卸载 cli2 才能安装 cli3, 否则直接进入步骤 2
 
 ```bash
 # npm uninstall -g vue-cli
