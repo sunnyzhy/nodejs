@@ -64,3 +64,9 @@ https://registry.npm.taobao.org/
 ```
 
 设置完成之后，依然用 ```npm``` 命令，但是实际是从淘宝的国内服务器下载。
+
+## 6. 安装 yarn
+
+```bash
+npm install -g yarn
+```
