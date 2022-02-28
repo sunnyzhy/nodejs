@@ -116,7 +116,7 @@ spinner.start()
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <h1>{{evn}}</h1>
+    <h1>{{env}}</h1>
     <router-view/>
   </div>
 </template>
@@ -126,7 +126,7 @@ export default {
   name: 'App',
   data () {
     return {
-      evn: process.env.BASE_URI
+      env: process.env.BASE_URI
     }
   }
 }
