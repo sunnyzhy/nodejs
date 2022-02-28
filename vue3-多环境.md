@@ -79,7 +79,7 @@ module.exports = defineConfig({
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service serve",
+    "dev": "vue-cli-service serve --mode dev",
     "build--dev": "vue-cli-service build --mode dev",
     "build--test": "vue-cli-service build --mode test",
     "build--prod": "vue-cli-service build --mode prod"
@@ -93,7 +93,7 @@ module.exports = defineConfig({
 ```vue
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <h1>{{evn}}</h1>
+  <h1>{{env}}</h1>
   <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
@@ -107,7 +107,7 @@ export default {
   },
   data () {
     return {
-      evn: process.env.VUE_APP_URL
+      env: process.env.VUE_APP_URL
     }
   }
 }
