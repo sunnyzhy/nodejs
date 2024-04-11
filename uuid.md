@@ -9,25 +9,26 @@ UUID 版本：
 
 ## Nodejs
 
-安装 node-uuid：
+安装 uuid：
 
 ```bash
-npm install node-uuid
+npm install uuid
 ```
 
 示例：
 
 ```javascript
-import uuid from 'node-uuid';
+import { v1 as uuid } from 'uuid'; // import { v4 as uuid } from 'uuid';
 
-console.log(uuid.v1());
-console.log(uuid.v4());
+const uid = uuid();
+console.log(uid);
 ```
 
 ```javascript
-const uuid = require('uuid/v1');
+const uuid = require('uuid');
 
-console.log(uuid());
+console.log(uuid.v1());
+console.log(uuid.v4());
 ```
 
 ## TypeScript
