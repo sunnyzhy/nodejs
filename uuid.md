@@ -18,10 +18,16 @@ npm install node-uuid
 示例：
 
 ```javascript
-import uuid from 'node-uuid'; // 或者 const uuidv1 = require('uuid/v1');
+import uuid from 'node-uuid';
 
 console.log(uuid.v1());
 console.log(uuid.v4());
+```
+
+```javascript
+const uuid = require('uuid/v1');
+
+console.log(uuid());
 ```
 
 ## TypeScript
@@ -33,7 +39,7 @@ npm install uuid
 ```
 
 ```typescript
-import { v1 as uuid } from 'uuid'; # import { v4 as uuid } from 'uuid';
+import { v1 as uuid } from 'uuid'; // import { v4 as uuid } from 'uuid';
 
 const uid: string = uuid();
 console.log(uid);
