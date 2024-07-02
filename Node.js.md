@@ -45,7 +45,7 @@ d:\nodejs
 ## 5. 安装 cnpm
 ### 5.1 安装方式一
 ```bash
-# npm install -g cnpm --registry=https://registry.npm.taobao.org
+# npm install -g cnpm --registry=https://registry.npmmirror.com
 
 # cnpm -v
 cnpm@6.1.1 (/usr/local/nodejs/lib/node_modules/cnpm/lib/parse_argv.js)
@@ -64,10 +64,10 @@ registry=https://r.npm.taobao.org
 
 ### 5.2 安装方式二
 ```bash
-# npm config set registry https://registry.npm.taobao.org
+# npm config set registry https://registry.npmmirror.com
 
 npm config get registry
-https://registry.npm.taobao.org/
+https://registry.npmmirror.com
 ```
 
 设置完成之后，依然用 ```npm``` 命令，但是实际是从淘宝的国内服务器下载。
