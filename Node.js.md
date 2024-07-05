@@ -66,7 +66,7 @@ registry=https://r.npm.taobao.org
 ```bash
 # npm config set registry https://registry.npmmirror.com
 
-npm config get registry
+# npm config get registry
 https://registry.npmmirror.com
 ```
 
@@ -75,5 +75,5 @@ https://registry.npmmirror.com
 ## 6. 安装 yarn
 
 ```bash
-npm install -g yarn
+# npm install -g yarn
 ```
