@@ -1,6 +1,6 @@
 # FAQ
 
-## 1 npm ERR! Failed at the chromedriver@x.xx.x install script.
+## npm ERR! Failed at the chromedriver@x.xx.x install script.
 
 解决方法:
 
@@ -8,7 +8,7 @@
 # cnpm install chromedriver --chromedriver_cdnurl=http://cdn.npm.taobao.org/dist/chromedriver
 ```
 
-# 2 cnpm : 无法加载文件 ..\cnpm.ps1，因为在此系统上禁止运行脚本。
+# cnpm : 无法加载文件 ..\cnpm.ps1，因为在此系统上禁止运行脚本。
 
 解决方法:
 
@@ -17,3 +17,9 @@
    ```bash
    set-ExecutionPolicy RemoteSigned
    ```
+
+## find Python Python is not set from command line or npm configuration
+
+```bash
+npm --python_mirror=https://registry.npmmirror.com/-/binary/python/ install --global windows-build-tools
+```
