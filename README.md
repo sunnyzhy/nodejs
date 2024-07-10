@@ -1,6 +1,6 @@
 # Profile
 
-## 自动安装相关依赖
+## 自动安装相关依赖（管理员身份运行）
 
 ```bash
 npm install --g --production windows-build-tools
