@@ -1,5 +1,29 @@
 # Profile
 
+## npm 和 yarn
+
+### npm 修改镜像源
+
+```bash
+# npm config set registry https://registry.npmmirror.com
+
+# npm config get registry
+https://registry.npmmirror.com
+
+# npm config list
+```
+
+### yarn 修改镜像源
+
+```bash
+# yarn config set registry https://registry.npmmirror.com
+
+# yarn config get registry
+https://registry.npmmirror.com
+
+# yarn config list
+```
+
 ## 自动安装相关依赖（管理员身份运行）
 
 ```bash
