@@ -17,14 +17,19 @@
 2. 使用 ```computed``` 属性过滤出满足条件的数据:
 
 ```vue
-<el-checkbox v-for="item in filterItem(items)" :label="item.value" :key="item.key"
+<el-checkbox v-for="item in filterItem" :label="item.value" :key="item.key"
   :checked="item.checked">{{item.value}}
 </el-checkbox>
 
+data() {
+  return {
+    dataItems: []
+  };
+},
 computed: {
-  filterItem(items) {
-    return items.filter((item, index) => {
-      return !item.checked;
+  filterItem() {
+    return this.dataItems.filter((item, index) => {
+      return item.visible;
     });
   }
 }
